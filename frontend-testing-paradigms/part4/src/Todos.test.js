@@ -10,6 +10,12 @@ const items = [
   { name: "four", complete: false }
 ];
 
+test("renders the items - SNAPSHOT", () => {
+  const { container } = render(<Todos list={items} />);
+
+  expect(container.firstChild).toMatchSnapshot();
+});
+
 test("renders the items", () => {
   const { container, getByText } = render(<Todos list={items} />);
 
@@ -29,10 +35,4 @@ test("renders the items", () => {
   items.forEach(item => {
     expect(getByText(item.name)).toBeDefined();
   });
-});
-
-test("renders the items - SNAPSHOT", () => {
-  const { container } = render(<Todos list={items} />);
-
-  expect(container.firstChild).toMatchSnapshot();
 });
