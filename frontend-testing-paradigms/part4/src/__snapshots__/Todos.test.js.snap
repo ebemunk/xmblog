@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the items - SNAPSHOT 1`] = `
+<div
+  class="todos"
+>
+  <li
+    class="item"
+  >
+    <input
+      type="checkbox"
+    />
+    one
+  </li>
+  <li
+    class="item complete"
+  >
+    <input
+      checked=""
+      type="checkbox"
+    />
+    two
+  </li>
+  <li
+    class="item complete"
+  >
+    <input
+      checked=""
+      type="checkbox"
+    />
+    three
+  </li>
+  <li
+    class="item"
+  >
+    <input
+      type="checkbox"
+    />
+    four
+  </li>
+</div>
+`;
